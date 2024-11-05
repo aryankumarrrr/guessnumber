@@ -1,0 +1,132 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(44, 44, 44);
+    font-family: 'Staatliches', cursive;
+}
+.overlay{
+    filter: blur(0px);
+}
+.modal{
+    position: absolute;
+    display: flex;
+    background-color: white;
+    padding:20px;
+    border:none;
+    border-radius: 30px;
+    position: fixed;
+    flex-direction: column;
+    top:20vh;
+    left:0;
+    right:0;
+    width:40%;
+    margin:0 auto;
+    z-index:3;
+    filter:drop-shadow(50px 50px 50px);
+}
+.hidden{
+    display:none;
+}
+header {
+    height:400px;
+    width:100%;
+    border-bottom:5px solid white;
+    display:flex;
+    flex-direction:column;
+    position: relative;
+}
+.top{
+    display:flex;
+    flex-direction:row;
+}
+.btn{
+    margin:30px;
+    background-color: white;
+    border:2px solid white;
+    border-radius:5px;
+    font-size:30px;
+    letter-spacing: 3px;
+    font-family: 'Staatliches', cursive;
+    color:black;
+}
+
+.btn:hover{
+    background-color: rgb(212, 211, 211);
+}
+.help{
+    margin-left:auto;
+}
+.wrapper{
+    text-align:center;
+    font-size:50px;
+    letter-spacing: 3px;
+    color:white;
+    display: flex;
+    justify-content: center;
+}
+
+.guessBlock {
+    position: absolute;
+    top:320px;
+    left: 0;
+    right:0;
+    margin:0 auto;
+    color:#404040;
+    background-color: white;
+    border:5px solid white;
+    border-radius: 10px;
+    font-size:100px;
+    text-align:center;
+    margin:0 auto;
+    width:150px;
+    height:150px;
+    
+}
+.guessBlock p{
+    position: relative;
+    top:-90px;
+}
+
+.content{
+    display: flex;
+    column-gap: 30px;
+    justify-content:space-around;
+    align-content: space-around;
+    height:400px;
+}
+.field{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width:30%;
+}
+.scoreboard{
+    display: flex;
+    flex-direction: column;
+    color:white;
+    font-size:30px;
+    justify-content: space-evenly;
+}
+.check{
+    background-color: white;
+    border:2px solid white;
+    border-radius:5px;
+    font-size:30px;
+    letter-spacing: 3px;
+    font-family: 'Staatliches', cursive;
+    color:black;
+    margin:0 auto;
+}
+.check:hover{
+    background-color: rgb(212, 211, 211);
+}
+.inputvalue{
+    border:5px solid white;
+    height:100px;
+    margin:0 40px;
+    background-color: transparent;
+    color:white;
+    font-size: 40px;
+    text-align: center;
+    font-family: 'Staatliches', cursive;
+}

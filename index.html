@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guessing The Number</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <div class="modal hidden">
+        <p>Welcome...</p>
+        <p>
+          Enter a number into the provided field to check its the hidden number
+          or not.
+        </p>
+        <p>Too High means you missed it by a little margin.</p>
+        <p>High Guess means you are close.</p>
+        <p>Too Low means you have a bad guess</p>
+        <p>You got 20 chances to guess the hidden number</p>
+        <p>Enjoy!!</p>
+        <button class="btn close">
+          <span><i class="fa fa-window-close"></i></span>
+        </button>
+        <p align = 'center'>Press 'esc' to close.</p>
+      </div>
+    <div class="overlay">
+      
+    
+    <header>
+      <div class="top">
+        <button class="btn again">Again!</button>
+        <button class="btn help">How to Play</button>
+      </div>
+      <div class="wrapper">
+        <p>Guess The Number !!</p>
+      </div>
+    </header>
+    <div class="guessBlock"><p>?</p></div>
+    <div class="content">
+      <div class="field">
+        <input type="number" class="inputvalue" />
+        <button class="btn check">Check !!</button>
+      </div>
+      <div class="scoreboard">
+        <div><p class="status">Start Guessing...</p></div>
+        <div class="score">
+          <p>Score : <span class="currentscore">20</span></p>
+          <p>HighScore : <span class="highscore">0</span></p>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+    </div>
+  </body>
+</html>
